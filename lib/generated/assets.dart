@@ -2,8 +2,8 @@
 class Assets {
   Assets._();
 
-  static const String fontsMontserratVariableFontWght = 'assets/fonts/Montserrat-VariableFont_wght.ttf';
   static const String imagesBook = 'assets/images/book.gif';
   static const String imagesLogo = 'assets/images/Logo.png';
+  static const String imagesStar = 'assets/images/Star.png';
 
 }
