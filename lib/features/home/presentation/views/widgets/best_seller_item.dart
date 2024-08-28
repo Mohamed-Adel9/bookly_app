@@ -1,5 +1,5 @@
 import 'package:bookly_app/core/utils/styles.dart';
-import 'package:bookly_app/generated/assets.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/rating_widget.dart';
 import 'package:flutter/material.dart';
 
 class BestSellerItem extends StatelessWidget {
@@ -49,18 +49,13 @@ class BestSellerItem extends StatelessWidget {
                   height: 10.0,
                 ),
                 Row(
-                  children: [
+                  children: const [
                     Text(
                       "19.99 €",
                       style: Styles.bold22
                     ),
-                    SizedBox(width: 20,),
-                    Image.asset(Assets.imagesStar),
-                    SizedBox(width: 5,),
-
-                    Text("4.8",style: Styles.medium16,),
-                    SizedBox(width: 5,),
-                    Text("(2390)",style: Styles.regular14,),
+                    Spacer(),
+                    RatingWidget(),
                   ],
                 ),
               ],
@@ -71,3 +66,4 @@ class BestSellerItem extends StatelessWidget {
     );
   }
 }
+
