@@ -32,6 +32,7 @@ class HomeRemoteDataSourceImpel extends HomeRemoteDataSource {
         endPoint: "volumes?q=programming&Filtering=free-ebooks&Sorting=newest");
 
     List<BookEntity> books = getBooksList(data);
+    saveBooksData(books, kNewestBox);
 
     return books;
   }
