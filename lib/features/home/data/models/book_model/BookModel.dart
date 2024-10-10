@@ -1,8 +1,10 @@
-import 'package:bookly_app/features/home/data/models/book_model/access_info.dart';
-import 'package:bookly_app/features/home/data/models/book_model/sale_info.dart';
-import 'package:bookly_app/features/home/data/models/book_model/search_info.dart';
+
 import 'package:bookly_app/features/home/data/models/book_model/volum_info.dart';
 import 'package:bookly_app/features/home/domain/entities/book_entity.dart';
+
+import 'access_info.dart';
+import 'sale_info.dart';
+import 'search_info.dart';
 
 class BookModel extends BookEntity {
   String? kind;
@@ -28,7 +30,7 @@ class BookModel extends BookEntity {
       image: volumeInfo?.imageLinks?.thumbnail ?? '',
       authorName: volumeInfo?.authors?.first ?? 'No Name',
       price: 0.0,
-      rating: volumeInfo!.averageRating!,
+      rating: volumeInfo!.averageRating ?? 2.5,
       title: volumeInfo.title!);
 
   factory BookModel.fromJson(Map<String, dynamic> json) => BookModel(

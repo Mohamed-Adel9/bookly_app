@@ -11,7 +11,6 @@ class CustomBookDetailsListView extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 10.0),
         child: CustomBookDetailsItem(),
       ),
-      itemCount: 10,
       scrollDirection: Axis.horizontal,
     );
   }
